@@ -1,0 +1,47 @@
+.footer {
+  background-color: #193d3d;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.footer-Add {
+  font-size: 40px;
+  color: #193d3d;
+  background-color: #010102;
+  border-radius: 15px;
+  padding: 15px 25px;
+  cursor: pointer;
+}
+
+.footer-Add:hover {
+  color: #5d8374;
+}
+
+.footer-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-item {
+  font-size: 40px;
+  padding: 0 10px;
+  color: #010102;
+  cursor: pointer;
+}
+
+.footer-item:hover {
+  color: #010102;
+}
+
+.envelope {
+  font-size: 30px;
+  color: #5d8374;
+  cursor: pointer;
+  margin-left: 40px;
+}

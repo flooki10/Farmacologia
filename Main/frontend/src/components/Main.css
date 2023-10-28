@@ -1,0 +1,103 @@
+/* Main.css */
+
+.patient-info-form {
+  padding: 20px; /* Agregado un espacio alrededor del formulario */
+  text-align: left;
+}
+
+.patient-info-form h2 {
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #2c3333;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 15px; /* Ajustado el espacio entre grupos de formulario */
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: 400;
+  color: #eeeeee;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #2c3333;
+  border-radius: 5px;
+  font-weight: 200;
+  font-style: italic;
+  color: #2c3333;
+}
+
+select#genero,
+select {
+  appearance: button;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-group {
+  margin-right: 10px; /* Espacio entre los elementos si es necesario */
+}
+
+/* Ajusta otros estilos según tus preferencias */
+.buttons-container {
+  text-align: center;
+}
+
+.buttons-container button {
+  display: block;
+  margin-bottom: 20px; /* Agrega un espacio entre los botones */
+}
+
+
+button[type="submit"] {
+  width: 180px;
+  height: 50px;
+  background-color: #193d3d;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 22px;
+}
+
+button[type="submit"]:hover {
+  background-color: #143131;
+}
+
+/**/
+.resultado-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
