@@ -1,49 +1,9 @@
-import React, { useState} from 'react';
+import React from 'react';
 import './Main.css';
-import axios from 'axios';
 
 
-
-function Main() {
-
-  const [formData, setFormData] = useState({
-    Ndehistoriaclinica: '',
-    nombre: '',
-    apellido: '',
-    genero: '',
-    Fechadenacimiento: '',
-    Enfermedad: '',
-    otrasenfermedades: '',
-    tratamiento: '',
-    genotipos: '',
-    alelo1: '',
-    alelo2: '',
-  });
-
-  const [resultados, setResultados] = useState(null);
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault(); // Previene la recarga de la página al enviar el formulario
-    axios
-      .post('http://localhost:8000/api/pacientes/', formData)
-      .then((res) => {
-        setResultados(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-    
-  };
-
-
+function Main({ formData, handleInputChange, handleSubmit  }) {
+  
   return (
     <div className="patient-info-form">
       <h2>Información del Paciente</h2>
