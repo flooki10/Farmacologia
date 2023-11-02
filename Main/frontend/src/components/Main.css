@@ -1,4 +1,39 @@
-/* Main.css */
+/* General layout styles */
+.Todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.column {
+  flex: 1;
+  min-width: 350px;
+}
+
+.column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .patient-info-form {
   padding: 20px; /* Agregado un espacio alrededor del formulario */
@@ -6,6 +41,7 @@
 }
 
 .patient-info-form h2 {
+  text-align: center;
   color: #fff;
   font-size: 2.3rem;
   font-weight: 900;
@@ -14,8 +50,69 @@
   margin-bottom: 30px;
 }
 
+/* Buttons styles */
+.buttons-container {
+  text-align: center;
+}
+
+.buttons-container button {
+  display: block;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: #193d3d;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 24px;
+}
+
+button[type="button"]:hover {
+  background-color: #143131;
+}
+
+/* Result section styles */
+
+.resultado-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.resultado-container h2 {
+  color: #2c3333;
+  font-size: 2.3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* Form styles */
+.form-details {
+  border: 1px solid #ccc;
+  padding: 50px;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  text-align: left;
+  margin-top: 70px;
+  font-size: 19px;
+}
+
+.form-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
 .form-group {
-  margin-bottom: 15px; /* Ajustado el espacio entre grupos de formulario */
+  margin-bottom: 15px;
   text-align: left;
 }
 
@@ -40,12 +137,12 @@ textarea {
   color: #2c3333;
 }
 
-select#genero,
-select {
+/* Other styles */
+.select-styling {
   appearance: button;
 }
 
-select::-ms-expand {
+.select-styling::-ms-expand {
   display: none;
 }
 
@@ -54,7 +151,6 @@ textarea {
   resize: vertical;
 }
 
-
 .form-container {
   display: flex;
   flex-direction: row;
@@ -62,20 +158,10 @@ textarea {
 }
 
 .form-group {
-  margin-right: 10px; /* Espacio entre los elementos si es necesario */
+  margin-right: 10px; /* Space between form elements if necessary */
 }
 
-/* Ajusta otros estilos según tus preferencias */
-.buttons-container {
-  text-align: center;
-}
-
-.buttons-container button {
-  display: block;
-  margin-bottom: 20px; /* Agrega un espacio entre los botones */
-}
-
-
+/* Submit button styles */
 button[type="submit"] {
   width: 180px;
   height: 50px;
@@ -92,12 +178,4 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #143131;
-}
-
-/**/
-.resultado-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
